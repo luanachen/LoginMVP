@@ -12,7 +12,19 @@
 		186B27CD208FC4090032DC44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B27CB208FC4090032DC44 /* Main.storyboard */; };
 		186B27CF208FC40C0032DC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B27CE208FC40C0032DC44 /* Assets.xcassets */; };
 		186B27D2208FC40C0032DC44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B27D0208FC40C0032DC44 /* LaunchScreen.storyboard */; };
+		186B27E2208FCACA0032DC44 /* LoginMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B27E1208FCACA0032DC44 /* LoginMVPTests.swift */; };
+		186B27EA208FCD460032DC44 /* RegistrationPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B27E9208FCD460032DC44 /* RegistrationPagePresenter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		186B27E4208FCACA0032DC44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186B27BC208FC4090032DC44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 186B27C3208FC4090032DC44;
+			remoteInfo = LoginMVP;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		186B27C4208FC4090032DC44 /* LoginMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		186B27CE208FC40C0032DC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186B27D1208FC40C0032DC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186B27D3208FC40C0032DC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B27DF208FCACA0032DC44 /* LoginMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186B27E1208FCACA0032DC44 /* LoginMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMVPTests.swift; sourceTree = "<group>"; };
+		186B27E3208FCACA0032DC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B27E9208FCD460032DC44 /* RegistrationPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPagePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		186B27C1208FC4090032DC44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B27DC208FCACA0032DC44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				186B27C6208FC4090032DC44 /* LoginMVP */,
+				186B27E0208FCACA0032DC44 /* LoginMVPTests */,
 				186B27C5208FC4090032DC44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				186B27C4208FC4090032DC44 /* LoginMVP.app */,
+				186B27DF208FCACA0032DC44 /* LoginMVPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +81,22 @@
 			children = (
 				186B27C7208FC4090032DC44 /* AppDelegate.swift */,
 				186B27C9208FC4090032DC44 /* ViewController.swift */,
+				186B27E9208FCD460032DC44 /* RegistrationPagePresenter.swift */,
 				186B27CB208FC4090032DC44 /* Main.storyboard */,
 				186B27CE208FC40C0032DC44 /* Assets.xcassets */,
 				186B27D0208FC40C0032DC44 /* LaunchScreen.storyboard */,
 				186B27D3208FC40C0032DC44 /* Info.plist */,
 			);
 			path = LoginMVP;
+			sourceTree = "<group>";
+		};
+		186B27E0208FCACA0032DC44 /* LoginMVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				186B27E1208FCACA0032DC44 /* LoginMVPTests.swift */,
+				186B27E3208FCACA0032DC44 /* Info.plist */,
+			);
+			path = LoginMVPTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = 186B27C4208FC4090032DC44 /* LoginMVP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		186B27DE208FCACA0032DC44 /* LoginMVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186B27E6208FCACA0032DC44 /* Build configuration list for PBXNativeTarget "LoginMVPTests" */;
+			buildPhases = (
+				186B27DB208FCACA0032DC44 /* Sources */,
+				186B27DC208FCACA0032DC44 /* Frameworks */,
+				186B27DD208FCACA0032DC44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186B27E5208FCACA0032DC44 /* PBXTargetDependency */,
+			);
+			name = LoginMVPTests;
+			productName = LoginMVPTests;
+			productReference = 186B27DF208FCACA0032DC44 /* LoginMVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +149,10 @@
 				TargetAttributes = {
 					186B27C3208FC4090032DC44 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					186B27DE208FCACA0032DC44 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 186B27C3208FC4090032DC44;
 					};
 				};
 			};
@@ -113,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				186B27C3208FC4090032DC44 /* LoginMVP */,
+				186B27DE208FCACA0032DC44 /* LoginMVPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		186B27DD208FCACA0032DC44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,10 +202,27 @@
 			files = (
 				186B27CA208FC4090032DC44 /* ViewController.swift in Sources */,
 				186B27C8208FC4090032DC44 /* AppDelegate.swift in Sources */,
+				186B27EA208FCD460032DC44 /* RegistrationPagePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B27DB208FCACA0032DC44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B27E2208FCACA0032DC44 /* LoginMVPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		186B27E5208FCACA0032DC44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 186B27C3208FC4090032DC44 /* LoginMVP */;
+			targetProxy = 186B27E4208FCACA0032DC44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		186B27CB208FC4090032DC44 /* Main.storyboard */ = {
@@ -310,6 +392,44 @@
 			};
 			name = Release;
 		};
+		186B27E7208FCACA0032DC44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginMVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lccj.LoginMVPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginMVP.app/LoginMVP";
+			};
+			name = Debug;
+		};
+		186B27E8208FCACA0032DC44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginMVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lccj.LoginMVPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginMVP.app/LoginMVP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +447,15 @@
 			buildConfigurations = (
 				186B27D7208FC40C0032DC44 /* Debug */,
 				186B27D8208FC40C0032DC44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186B27E6208FCACA0032DC44 /* Build configuration list for PBXNativeTarget "LoginMVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186B27E7208FCACA0032DC44 /* Debug */,
+				186B27E8208FCACA0032DC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
